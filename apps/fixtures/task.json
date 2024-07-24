@@ -1,0 +1,135 @@
+[
+  {
+    "model": "apps.task",
+    "pk": "c40282ac-8903-4ff8-814d-2d1d4406540e",
+    "fields": {
+      "update_at": "2024-05-07T14:39:20.450Z",
+      "created_at": "2024-05-07T14:39:20.450Z",
+      "title": "qweeeee",
+      "description": "qwerty",
+      "status": "blocked",
+      "user_task_list": "asss",
+      "lesson": "15c9df87-bd19-46b4-b11e-d45e12a0f6f5",
+      "task_number": 1,
+      "last_time": "2024-05-10T21:57:53.462Z",
+      "order": 1,
+      "priority": 1,
+      "must_complete": true,
+      "files": "file.txt"
+    }
+  },
+  {
+    "model": "apps.task",
+    "pk": "eb35a9cb-1f33-4641-8597-1e2a9e9717fb",
+    "fields": {
+      "update_at": "2024-05-07T14:39:20.450Z",
+      "created_at": "2024-05-07T14:39:20.450Z",
+      "title": "qweeeee 1",
+      "description": "qwerty 1",
+      "status": "blocked",
+      "user_task_list": "asss",
+      "lesson": "befafbc4-01d7-4e90-b0e4-b4325c9679c5",
+      "task_number": 1,
+      "last_time": "2024-05-10T21:57:53.462Z",
+      "order": 1,
+      "priority": 1,
+      "must_complete": true,
+      "files": "file.txt1"
+    }
+  },
+  {
+    "model": "apps.task",
+    "pk": "4310d364-0b32-42d8-82a5-7a2c1996a0b1",
+    "fields": {
+      "update_at": "2024-05-07T14:39:20.450Z",
+      "created_at": "2024-05-07T14:39:20.450Z",
+      "title": "Python dasturlash muhitini ko'chirib oling hamda o'rnating.\n",
+      "description": "qwerty 2",
+      "status": "in_prog",
+      "user_task_list": "qwdeqw",
+      "lesson": "84510f11-299f-44d8-8cfd-4f424a9cfbb3",
+      "task_number": 2,
+      "last_time": "2024-05-10T21:57:53.462Z",
+      "order": 2,
+      "priority": 6,
+      "must_complete": false,
+      "files": "wqdf"
+    }
+  },
+  {
+    "model": "apps.task",
+    "pk": "2f575b6e-6cc5-4d24-a1a0-4c121244a476",
+    "fields": {
+      "update_at": "2024-05-07T14:39:20.450Z",
+      "created_at": "2024-05-07T14:39:20.450Z",
+      "title": "Pycharm ning  Community edition versiyasini o'rnating.\n",
+      "description": "qwerty 3",
+      "status": "blocked",
+      "user_task_list": "eragfzds",
+      "lesson": "37a3a85e-0e26-4a26-9d8b-66a31c66b2a7",
+      "task_number": 3,
+      "last_time": "2024-05-10T21:57:53.462Z",
+      "order": 3,
+      "priority": 5,
+      "must_complete": true,
+      "files": "123123sdadad"
+    }
+  },
+  {
+    "model": "apps.task",
+    "pk": "9c63b6e0-36d7-4a28-baeb-b12f0123c833",
+    "fields": {
+      "update_at": "2024-05-07T14:39:20.450Z",
+      "created_at": "2024-05-07T14:39:20.450Z",
+      "title": "Hello World ! dasturini tuzing",
+      "description": "qwerty 4",
+      "status": "in_prog",
+      "user_task_list": "eradf",
+      "lesson": "48cb61f3-4ff2-4eb4-8c16-1d8ccfa3afec",
+      "task_number": 4,
+      "last_time": "2024-05-10T21:57:53.462Z",
+      "order": 4,
+      "priority": 4,
+      "must_complete": false,
+      "files": "wqdqw"
+    }
+  },
+  {
+    "model": "apps.task",
+    "pk": "e31f7b16-f43e-494f-b2c1-520cddfc55e3",
+    "fields": {
+      "update_at": "2024-05-07T14:39:20.450Z",
+      "created_at": "2024-05-07T14:39:20.450Z",
+      "title": "Pycharm da hello world dasturini chiqaring",
+      "description": "qwerty 5",
+      "status": "blocked",
+      "user_task_list": "awerf",
+      "lesson": "b2b0eae8-4589-4749-a8df-8e5076c130ff",
+      "task_number": 5,
+      "last_time": "2024-05-10T21:57:53.462Z",
+      "order": 5,
+      "priority": 3,
+      "must_complete": true,
+      "files": "123123sdadad"
+    }
+  },
+  {
+    "model": "apps.task",
+    "pk": "eab256c7-c12b-4ff9-9489-5f757b5b39b6",
+    "fields": {
+      "update_at": "2024-05-07T14:39:20.450Z",
+      "created_at": "2024-05-07T14:39:20.450Z",
+      "title": "Django",
+      "description": "qwerty 6",
+      "status": "in_prog",
+      "user_task_list": "aergfrfa",
+      "lesson": "4bc7e07e-1c8a-4ed1-9211-6f25416dfb8d",
+      "task_number": 6,
+      "last_time": "2024-05-10T21:57:53.462Z",
+      "order": 6,
+      "priority": 2,
+      "must_complete": false,
+      "files": "qwdwadsefw"
+    }
+  }
+]

@@ -1,0 +1,77 @@
+[
+  {
+    "model": "apps.course",
+    "pk": "2f47fd85-14c3-4f90-b13d-11d06fe86c30",
+    "fields": {
+      "update_at": "2024-05-07T15:56:42.712Z",
+      "created_at": "2024-05-07T14:32:05.601Z",
+      "title": "PYTHON DEVELOPMENT",
+      "lesson_count": 4,
+      "modul_count": 5,
+      "order": 4,
+      "task_count": 15,
+      "teacher": "9a18c5d8-7cfc-4512-8a94-4d3e2f5de1b5",
+      "url": "http://localhost:8000/en/admin/apps/course/add/"
+    }
+  },
+  {
+    "model": "apps.course",
+    "pk": "94b37a86-02e3-4907-816e-b724d38d95a1",
+    "fields": {
+      "update_at": "2024-05-07T15:48:59.760Z",
+      "created_at": "2024-05-07T15:48:59.760Z",
+      "title": "Django Kursi",
+      "lesson_count": 1,
+      "modul_count": 1,
+      "order": 2,
+      "task_count": 12,
+      "teacher": "9a18c5d8-7cfc-4512-8a94-4d3e2f5de1b5",
+      "url": "http://localhost:8000/en/admin/apps/course/add/"
+    }
+  },
+  {
+    "model": "apps.course",
+    "pk": "c4d6d3c9-3c8b-497d-80b2-4b5e504d2c0f",
+    "fields": {
+      "update_at": "2024-05-07T15:49:16.170Z",
+      "created_at": "2024-05-07T15:49:16.170Z",
+      "title": "Aiogram Kursi",
+      "lesson_count": 2,
+      "modul_count": 3,
+      "order": 3,
+      "task_count": 24,
+      "teacher": "9a18c5d8-7cfc-4512-8a94-4d3e2f5de1b5",
+      "url": "http://localhost:8000/en/admin/apps/course/add/"
+    }
+  },
+  {
+    "model": "apps.course",
+    "pk": "5bb94f8b-74d1-4e20-80b8-94e9d4b5e863",
+    "fields": {
+      "update_at": "2024-05-07T15:49:30.283Z",
+      "created_at": "2024-05-07T15:49:30.283Z",
+      "title": "Java Kursi",
+      "lesson_count": 3,
+      "modul_count": 4,
+      "order": 5,
+      "task_count": 36,
+      "teacher": "9a18c5d8-7cfc-4512-8a94-4d3e2f5de1b5",
+      "url": "http://localhost:8000/en/admin/apps/course/add/"
+    }
+  },
+  {
+    "model": "apps.course",
+    "pk": "bcefaa6c-c422-4e04-af29-2c23d3f80cf7",
+    "fields": {
+      "update_at": "2024-05-07T15:56:42.712Z",
+      "created_at": "2024-05-07T14:32:05.601Z",
+      "title": "PYTHON DEVELOPMENT 1",
+      "lesson_count": 12,
+      "modul_count": 2,
+      "order": 1,
+      "task_count": 48,
+      "teacher": "9a18c5d8-7cfc-4512-8a94-4d3e2f5de1b5",
+      "url": "http://localhost:8000/en/admin/apps/course/add/"
+    }
+  }
+]

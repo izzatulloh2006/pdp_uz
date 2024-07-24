@@ -1,0 +1,104 @@
+services:
+  backend_service:
+    build:
+      context: .
+      dockerfile: ./compose/django/Dockerfile
+    env_file: .env
+    command: /start-django
+    ports:
+      - 8000:${BACKEND_PORT}
+    volumes:
+      - media_volume:/app/media
+      - static_volume:/app/static
+    depends_on:
+      - postgres_service
+      - redis_service
+
+  postgres_service:
+    image: postgres:alpine
+    environment:
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+    volumes:
+      - pg_data_service:/var/lib/postgresql/data
+
+  redis_service:
+    image: redis:alpine
+    volumes:
+      - redis_data_service:/data
+
+  celery_worker:
+    build:
+      context: .
+      dockerfile: ./compose/django/Dockerfile
+    env_file: .env
+    volumes:
+      - media_volume:/app/media
+      - static_volume:/app/static
+    command: /start-celeryworker
+    depends_on:
+      - redis_service
+      - postgres_service
+
+  celery_beat:
+    build:
+      context: .
+      dockerfile: ./compose/django/Dockerfile
+    env_file: .env
+    volumes:
+      - media_volume:/app/media
+      - static_volume:/app/static
+    command: /start-celerybeat
+    depends_on:
+      - redis_service
+      - postgres_service
+
+  flower_service:
+    build:
+      context: .
+      dockerfile: ./compose/django/Dockerfile
+    env_file: .env
+    volumes:
+      - media_volume:/app/media
+      - static_volume:/app/static
+    ports:
+      - ${FLOWER_PORT}:${FLOWER_PORT}
+    command: /start-flower
+    depends_on:
+      - redis_service
+      - postgres_service
+
+
+  minio_service:
+    image: minio/minio
+    container_name: minio_container
+    ports:
+      - '9000:9000'
+      - '9001:9001'
+    volumes:
+      - minio_storage:/data
+    env_file: .env
+    command: server --console-address ":9001" /data
+
+  nginx:
+    build:
+      context: .
+      dockerfile: ./compose/nginx/Dockerfile
+    ports:
+      - '80:80'
+      - '443:443'
+    depends_on:
+      - backend_service
+    logging:
+      options:
+        max-size: '10m'
+        max-file: '3'
+    volumes:
+      - static_volume:/app/static
+      - media_volume:/app/media
+
+volumes:
+  static_volume:
+  media_volume:
+  minio_storage:
+  pg_data_service:
+  redis_data_service:
